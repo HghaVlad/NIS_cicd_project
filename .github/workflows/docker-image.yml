@@ -38,7 +38,7 @@ jobs:
          context: .
          file: ./Dockerfile
          push: true
-         tags: '${{ secrets.REGISTRY_URL }}/my-project/server:latest'
+         tags: '${{ secrets.USERNAME }}/my-project/server:latest'
          labels: ${{ steps.meta.outputs.labels }}
     
   
